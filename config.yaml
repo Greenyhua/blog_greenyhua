@@ -1,0 +1,85 @@
+baseURL: https://greenyhua.github.io/ # 主站的 URL
+title: Greenyhua's Blog # 站点标题
+copyright: "[©2025 greenyhua's Blog](https://greenyhua.github.io/)" # 网站的版权声明
+languageCode: en # 设置语言为英语
+
+# 全局配置
+enableInlineShortcodes: true # 是否启用 Shortcodes
+hasCJKLanguage: true # 是否包含 CJK（中文、日文、韩文）
+enableRobotsTXT: true # 允许生成 robots.txt
+enableEmoji: true # 允许使用 Emoji
+buildDrafts: false # 是否构建草稿
+buildFuture: false # 是否构建未来内容
+buildExpired: false # 是否构建过期内容
+
+# 菜单配置
+menus:
+  main:
+    - name: 🌼About
+      pageRef: "./"
+      weight: 1
+    - name: 📖Publications
+      pageRef: "publications/"
+      weight: 2
+    - name: 🎯Projects
+      pageRef: "projects/"
+      weight: 3
+    - name: 📃CV
+      pageRef: "cv/"
+      weight: 4
+    - name: ✍️Blog
+      pageRef: "blog/"
+      weight: 5
+
+
+# 分页设置
+pagination:
+  pagerSize: 10 # 每页显示的条目数
+
+# 搜索配置
+params:
+  fuseOpts:
+    isCaseSensitive: false # 是否大小写敏感
+    shouldSort: true # 是否排序
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"] # 搜索关键字段
+    includeMatches: true
+
+  # 评论的设置
+  giscus:
+    repo: "Greenyhua/blog_greenyhua"
+    repoId: "R_kgDOOkwXvA"
+    category: "Announcements"
+    categoryId: "DIC_kwDOOkwXvM4Cpydu"
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    lightTheme: "light"
+    darkTheme: "dark"
+    lang: "en"  
+    crossorigin: "anonymous"
+
+# 站点资源（如 favicon 和自定义 CSS）
+assets:
+  favicon: "favicon.png"
+  customCSS: 
+    - css/extended/custom.css # 自定义样式文件路径
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

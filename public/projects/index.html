@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav">
+    
+    <div class="nav-left">
+      <a href="/" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    
+    <div class="nav-links">
+      
+      <a href="/" class="nav-link ">🌼About</a>
+      <a href="/publications/" class="nav-link ">📖Publications</a>
+      <a href="/projects/" class="nav-link active">🎯Projects</a>
+      <a href="/cv/" class="nav-link ">📃CV</a>
+      <a href="/blog/" class="nav-link ">✍️Blog</a>
+    </div>
+  </nav>
+</header>
+  
+  <main>
+    
+  <article class="post-single" style="padding: 2rem; max-width: 960px; margin: auto;">
+    
+    <header class="post-header">
+      <h1 class="post-title" style="font-size: 2.2rem; margin-bottom: 1rem;">
+        Projects
+      </h1>
+  
+  
+      
+      <div class="post-description" style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.6;">
+        Hi👋 These are my research projects. Some of them are still in progress🏃‍♀️ <br> Feel free to 📧<a href="mailto:qingshijiark800@gmail.com">contact me</a> if you would like more information!
+      </div>
+      
+    </header>
+  
+    
+    
+    <div class="post-content" style="font-size: 1rem; line-height: 1.8;">
+      <div class="card" style="margin-bottom: 2rem;">
+<h3>1. Research on Social Familiarity and Self in the Uncanny Valley: A Multidimensional Exploration (Master Thesis)</h3>
+<p><em>Author &amp; Researcher | Advisor: Prof. Guomei Zhou</em><br>
+<em>Duration: December 2024 – Present</em></p>
+<p>This project investigates the <strong>uncanny valley effect</strong> through the lens of social cognition and self-concept, focusing on emotional, cognitive, and social mechanisms.<br>
+Key contributions:</p>
+<ul>
+<li>Designed and implemented experiments manipulating variables such as <strong>human-likeness</strong>, <strong>familiarity</strong>, and <strong>self-referential stimuli</strong> to test major uncanny valley hypotheses.</li>
+<li>Developed a <strong>multidimensional framework of social familiarity</strong> and analyzed its interactions with emotional and social-cognitive processes using <strong>data visualization</strong> and <strong>modeling techniques</strong>.</li>
+<li>Proposed future expansions, including:
+<ul>
+<li>The application of <strong>machine learning models</strong> to simulate uncanny valley-related emotional responses.</li>
+<li>Exploring real-time <strong>human-AI interactions</strong> using Virtual Reality technologies.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="card" style="margin-bottom: 2rem;">
+<h3>2. The Role of Self-Concept in Shaping the Uncanny Valley: A Meta-Analytic Approach</h3>
+<p><em>Researcher | Advisor: Prof. Guomei Zhou</em><br>
+<em>Duration: March 2025 – Present</em></p>
+<p>This project explores how <strong>self-concept perception</strong> influences the depth and position of the uncanny valley effect through a <strong>systematic meta-analysis</strong>.<br>
+Key contributions:</p>
+<ul>
+<li>Conducted a <strong>comprehensive literature review</strong> and selected studies based on defined criteria.</li>
+<li>Extracted and coded data for <strong>meta-analytic statistical analysis</strong>.</li>
+<li>Interpreted results and contributed to the <strong>development of theoretical frameworks</strong> and report preparation.</li>
+</ul>
+</div>
+<div class="card" style="margin-bottom: 2rem;">
+<h3>3. Development and Validation of the Scale of Human Threat Perception and Defensive Mechanisms Toward Robots</h3>
+<p><em>Researcher | Advisor: Prof. Guomei Zhou</em><br>
+<em>Duration: April 2025 – Present</em></p>
+<p>This project focuses on developing and validating a scale to measure human perceptions of threat and defensive responses toward robots, emphasizing emotional, cognitive, and behavioral dimensions.<br>
+Key contributions:</p>
+<ul>
+<li>Conducted an extensive <strong>literature review</strong> to refine the theoretical framework and identify key constructs of the scale.</li>
+<li>Analyzed the scale’s <strong>reliability</strong> and <strong>validity</strong> using <strong>exploratory factor analysis (EFA)</strong> and <strong>confirmatory factor analysis (CFA)</strong>.</li>
+</ul>
+</div>
+<div class="card" style="margin-bottom: 2rem;">
+<h3>4. Customer Subscription Prediction for Bank Products Based on the LightGBM Model</h3>
+<p><em>Author &amp; Researcher | Advisor: Associate Prof. Ying Lin</em><br>
+<em>Duration: October 2024 – January 2025</em></p>
+<p>This project focused on developing a <strong>machine learning model</strong> to predict customer subscriptions for banking products, leveraging advanced optimization techniques.<br>
+Key contributions:</p>
+<ul>
+<li>Preprocessed data, including <strong>feature encoding</strong>, <strong>standardization</strong>, and <strong>dataset splitting</strong>.</li>
+<li>Optimized machine learning models (<strong>Decision Tree</strong>, <strong>Random Forest</strong>, <strong>XGBoost</strong>, <strong>LightGBM</strong>) using <strong>Optuna</strong> for hyperparameter tuning.</li>
+<li>Visualized results and contributed to the final report, highlighting key findings and actionable insights.</li>
+</ul>
+</div>
+    </div>
+    
+  </article>
+
+  </main>
+
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    } else {
+      toggleButton.textContent = '🌙';
+    }
+  
+    
+    toggleButton?.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

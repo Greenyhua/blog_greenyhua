@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ if eq .Layout "cv" }}
+    {{ partial "cv.html" . }}
+  {{ else if eq .Layout "projects" }}
+    {{ partial "projects.html" . }}
+  {{ else if eq .Layout "publications" }}
+    {{ partial "publications.html" . }}
+  {{ else }}
+    <div class="content">{{ .Content }}</div>
+  {{ end }}
+{{ end }}

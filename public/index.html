@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.146.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav">
+    
+    <div class="nav-left">
+      <a href="/" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    
+    <div class="nav-links">
+      
+      <a href="/" class="nav-link active">🌼About</a>
+      <a href="/publications/" class="nav-link ">📖Publications</a>
+      <a href="/projects/" class="nav-link ">🎯Projects</a>
+      <a href="/cv/" class="nav-link ">📃CV</a>
+      <a href="/blog/" class="nav-link ">✍️Blog</a>
+    </div>
+  </nav>
+</header>
+  
+  <main>
+    
+<section style="
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  min-height: 90vh;
+">
+  <div style="
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    max-width: 2400px;
+    width: 100%;
+    align-items: start;
+  ">
+    
+    <div style="text-align: center;">
+      <img src="/my_photo.jpg" alt="My Photo" style="width: 260px; border-radius: 50%; margin-bottom: 1.5rem;" />
+      <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Qing Shijia</h2>
+      <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">Master in Applied Psychology</p>
+      <a href="mailto:qingshijiark800@gmail.com" style="font-size: 1.1rem; color: #3b82f6;">qingshijiark800@gmail.com</a>
+    </div>
+
+    
+    <div style="min-width: 400px;">
+
+      
+      <div class="card">
+        <h1 style="font-size: 1.8rem; margin-bottom: 1.2rem;">About Me</h2>
+        <div class="about-content">
+          <p>Hi👋, I am Shijia Qing, a Master&rsquo;s student in Applied Psychology at Sun Yat-sen University, under the supervision of Professor Guomei, Zhou.
+My reseach interests are <strong>human-computer interaction</strong>, <strong>social cognition</strong>, and <strong>the uncanny valley effect</strong>.</p>
+<p>✨My research explores how <strong>the concept of self</strong> and <strong>social familiarity</strong> shape perceptions of humanoid robots and artificial agents🤖.<br>
+✨I have also contributed to the development of theoretical frameworks and measurement tools🖥️, including <strong>meta-analytic approaches</strong> and <strong>scale validation</strong> studies.</p>
+<p>📖Alongside my academic pursuits, I interned at Seasun Games and NetEase, where I conducted <strong>user experience research</strong>, competitive analysis, and playtesting for videogames🎮.</p>
+<p>🏃‍♀️I am eager to further explore human-computer interaction and contribute to advancing our understanding of how humans interact with intelligent systems!</p>
+
+        </div>
+      </div>
+
+      
+      <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      ">
+        
+        <div class="card">
+          <h2 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Research Interests</h2>
+          <ul style="padding-left: 1.2rem; font-size: 1rem; line-height: 1.6;">
+            <li>Experimental Psychology</li>
+            <li>Cognitive Psychology</li>
+            <li>Human-Computer Interaction</li>
+            <li>Behavioral/Neuroscience Research</li>
+          </ul>
+        </div>
+
+        
+        <div class="card">
+          <h2 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Education</h2>
+          <ul style="padding-left: 1.2rem; font-size: 1rem; line-height: 1.6;">
+            <li>🎓 Master in Applied Psychology<br />Sun Yat-sen University, 2023–2026 (expected)</li>
+            <li>🎓 Bachelor in Spanish Literature<br />Sun Yat-sen University, 2019–2023</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    } else {
+      toggleButton.textContent = '🌙';
+    }
+  
+    
+    toggleButton?.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

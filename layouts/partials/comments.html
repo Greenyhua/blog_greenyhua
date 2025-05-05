@@ -1,0 +1,43 @@
+<div id="tw-comment" style="margin-top: 3rem;"></div>
+<script>
+    const getStoredTheme = () => localStorage.getItem("pref-theme") === "light" ? "{{ .Site.Params.giscus.lightTheme }}" : "{{ .Site.Params.giscus.darkTheme }}";
+    const setGiscusTheme = () => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (iframe) {
+            iframe.contentWindow.postMessage({
+                giscus: {
+                    setConfig: {theme: getStoredTheme()}
+                }
+            }, 'https://giscus.app');
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const giscusAttributes = {
+            "src": "https://giscus.app/client.js",
+            "data-repo": "{{ .Site.Params.giscus.repo }}",
+            "data-repo-id": "{{ .Site.Params.giscus.repoId }}",
+            "data-category": "{{ .Site.Params.giscus.category }}",
+            "data-category-id": "{{ .Site.Params.giscus.categoryId }}",
+            "data-mapping": "{{ .Site.Params.giscus.mapping }}",
+            "data-strict": "{{ .Site.Params.giscus.strict }}",
+            "data-reactions-enabled": "{{ .Site.Params.giscus.reactionsEnabled }}",
+            "data-emit-metadata": "{{ .Site.Params.giscus.emitMetadata }}",
+            "data-input-position": "{{ .Site.Params.giscus.inputPosition }}",
+            "data-theme": getStoredTheme(),
+            "data-lang": "{{ .Site.Params.giscus.lang }}",
+            "data-loading": "lazy",
+            "crossorigin": "anonymous",
+        };
+
+        const giscusScript = document.createElement("script");
+        Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+        document.querySelector("#tw-comment").appendChild(giscusScript);
+
+        const themeSwitcher = document.querySelector("#theme-toggle");
+        if (themeSwitcher) themeSwitcher.addEventListener("click", setGiscusTheme);
+
+        const themeFloatSwitcher = document.querySelector("#theme-toggle-float");
+        if (themeFloatSwitcher) themeFloatSwitcher.addEventListener("click", setGiscusTheme);
+    });
+</script>

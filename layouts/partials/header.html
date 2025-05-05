@@ -1,0 +1,19 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <!-- ✅ 左侧：站点名 + 暗色模式按钮 -->
+    <div class="nav-left">
+      <a href="/" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    <!-- ✅ 右侧导航链接 -->
+    <div class="nav-links">
+      {{ $current := .RelPermalink }}
+      <a href="/" class="nav-link {{ if eq $current "/" }}active{{ end }}">🌼About</a>
+      <a href="/publications/" class="nav-link {{ if strings.HasPrefix $current "/publications/" }}active{{ end }}">📖Publications</a>
+      <a href="/projects/" class="nav-link {{ if strings.HasPrefix $current "/projects/" }}active{{ end }}">🎯Projects</a>
+      <a href="/cv/" class="nav-link {{ if strings.HasPrefix $current "/cv/" }}active{{ end }}">📃CV</a>
+      <a href="/blog/" class="nav-link {{ if strings.HasPrefix $current "/blog/" }}active{{ end }}">✍️Blog</a>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container blog-page">
+  <h1 style="font-size: 2rem; margin-bottom: 1.5rem;">Blog</h1>
+
+  {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
+      <div class="card" style="margin-bottom: 2rem; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='0 0 12px rgba(0,0,0,0.05)'; this.style.transform='none'">
+        <h2 style="margin-top: 0; color: #9333ea;">{{ .Title }}</h2>
+        <p>{{ .Summary }}</p>
+      </div>
+    </a>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,66 @@
+{{ define "main" }}
+<section style="
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  min-height: 90vh;
+">
+  <div style="
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    max-width: 2400px;
+    width: 100%;
+    align-items: start;
+  ">
+    <!-- 左侧：照片+信息 -->
+    <div style="text-align: center;">
+      <img src="/my_photo.jpg" alt="My Photo" style="width: 260px; border-radius: 50%; margin-bottom: 1.5rem;" />
+      <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Qing Shijia</h2>
+      <p style="font-size: 1.3rem; margin-bottom: 0.5rem;">Master in Applied Psychology</p>
+      <a href="mailto:qingshijiark800@gmail.com" style="font-size: 1.1rem; color: #3b82f6;">qingshijiark800@gmail.com</a>
+    </div>
+
+    <!-- 右侧：卡片式内容 -->
+    <div style="min-width: 400px;">
+
+      <!-- 🟣 About Card：独占一行 -->
+      <div class="card">
+        <h1 style="font-size: 1.8rem; margin-bottom: 1.2rem;">About Me</h2>
+        <div class="about-content">
+          {{ .Content }}
+        </div>
+      </div>
+
+      <!-- 🟣 Interests & Education：并排两栏 -->
+      <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      ">
+        <!-- Interests Card -->
+        <div class="card">
+          <h2 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Research Interests</h2>
+          <ul style="padding-left: 1.2rem; font-size: 1rem; line-height: 1.6;">
+            <li>Experimental Psychology</li>
+            <li>Cognitive Psychology</li>
+            <li>Human-Computer Interaction</li>
+            <li>Behavioral/Neuroscience Research</li>
+          </ul>
+        </div>
+
+        <!-- Education Card -->
+        <div class="card">
+          <h2 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Education</h2>
+          <ul style="padding-left: 1.2rem; font-size: 1rem; line-height: 1.6;">
+            <li>🎓 Master in Applied Psychology<br />Sun Yat-sen University, 2023–2026 (expected)</li>
+            <li>🎓 Bachelor in Spanish Literature<br />Sun Yat-sen University, 2019–2023</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}

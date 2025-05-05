@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <div class="container">
+
+    <!-- 🔙 返回 Blog 列表链接 -->
+    <a href="/blog/" style="display: inline-block; margin-bottom: 1rem; color: #9333ea; text-decoration: none;">
+      ← Back to Blog
+    </a>
+
+    <!-- ✅ 卡片样式包裹正文 -->
+    <div class="card">
+      <h1 style="font-size: 2rem;">{{ .Title }}</h1>
+      <p style="color: #666; margin-bottom: 2rem;">{{ .Date.Format "Jan 2, 2006" }}</p>
+
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <!-- 评论区保留在卡片之外 -->
+    {{ partial "comments.html" . }}
+  </div>
+{{ end }}

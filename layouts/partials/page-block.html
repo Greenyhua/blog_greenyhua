@@ -1,0 +1,22 @@
+<article class="post-single" style="padding: 2rem; max-width: 960px; margin: auto;">
+    <!-- 页面标题 -->
+    <header class="post-header">
+      <h1 class="post-title" style="font-size: 2.2rem; margin-bottom: 1rem;">
+        {{ .Title }}
+      </h1>
+  
+  
+      {{ with .Description }}
+      <div class="post-description" style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.6;">
+        {{ . | markdownify }}
+      </div>
+      {{ end }}
+    </header>
+  
+    <!-- 页面内容 -->
+    {{ if .Content }}
+    <div class="post-content" style="font-size: 1rem; line-height: 1.8;">
+      {{ .Content }}
+    </div>
+    {{ end }}
+  </article>
