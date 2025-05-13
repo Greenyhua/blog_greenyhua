@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shijia Qing - Projects</title>
+  
+  <link rel="stylesheet" href="https://greenyhua.github.io/blog_greenyhua/css/style.min.76eaa045afa830c2b6efcac7306459a89fa0e6fab89c237659e1a380b76c7b5c.css">
+  
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav">
+    
+    <div class="nav-left">
+      <a href="../" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    
+    <div class="nav-links">
+      
+      <a href="../" class="nav-link ">🌼About</a>
+      <a href="../publications/" class="nav-link ">📖Publications</a>
+      <a href="../projects/" class="nav-link active">🎯Projects</a>
+      <a href="../cv/" class="nav-link ">📃CV</a>
+      <a href="../blog/" class="nav-link ">✍️Blog</a>
+    </div>
+  </nav>
+</header>
+  
+  <main>
+    
+<div class="container blog-page">
+  <h1 style="font-size: 2rem; margin-bottom: 1.5rem;">Projects</h1>
+  <div class="project-intro">
+    <p>Here you&rsquo;ll find a list of my research and applied projects😊.<br>
+If you&rsquo;re interested in collaboration or want to know more details, please  📧<a href="mailto:qingshijiark800@gmail.com">contact me</a>.</p>
+
+  </div>
+  
+    <a href="../projects/project-1-thesis/" style="text-decoration: none; color: inherit;">
+      <div class="card project-card" style="margin-bottom: 2rem;">
+        <h2 style="margin-top: 0; color: #9333ea;">Research on Social Familiarity and Self in the Uncanny Valley: A Multidimensional Exploration (Master Thesis)</h2>
+        <p><p><em>Author &amp; Lead Researcher | Advisor: Prof. Guomei Zhou</em><br>
+<em><strong>Duration:</strong> Dec 2024 – Present</em></p>
+<p>This project investigates the uncanny valley effect from the perspectives of social cognition and self-concept, focusing on emotional, cognitive, and social mechanisms. It also includes the development and validation of a new scale to measure human threat perception and defensive mechanisms toward robots.</p>
+</p>
+      </div>
+    </a>
+  
+    <a href="../projects/project-2-recency/" style="text-decoration: none; color: inherit;">
+      <div class="card project-card" style="margin-bottom: 2rem;">
+        <h2 style="margin-top: 0; color: #9333ea;">Recency Effect in the Ensemble Perception of Average Facial Attractiveness</h2>
+        <p><p><em>Author &amp; Lead Researcher | Advisor: Prof. Guomei Zhou</em><br>
+<em><strong>Duration:</strong> Nov 2023 – Aug 2024</em></p>
+<ul>
+<li>Explored how recent stimuli influence ensemble perception of group facial attractiveness</li>
+<li>Designed and conducted four experiments using RSVP paradigms with morphed and real faces</li>
+<li>Demonstrated that later-presented faces exert disproportionate weight on group attractiveness judgments</li>
+<li>Established a weighted-processing model and linked the recency effect to memory constraints</li>
+</ul></p>
+      </div>
+    </a>
+  
+    <a href="../projects/project-3-hf/" style="text-decoration: none; color: inherit;">
+      <div class="card project-card" style="margin-bottom: 2rem;">
+        <h2 style="margin-top: 0; color: #9333ea;">User Mental Model Construction for 3D Virtual Fitting Room</h2>
+        <p><p><em>Author &amp; Researcher | Advisor: Associate Prof. Qi Wang</em><br>
+<em><strong>Duration:</strong> Apr 2024 – Jun 2024</em></p>
+<ul>
+<li>Developed a preliminary user mental model for 3D virtual fitting room applications</li>
+<li>Analyzed user needs, personas, and behavioral patterns in online apparel shopping</li>
+<li>Designed user-centered functionalities and usability testing scenarios</li>
+<li>Proposed solutions for optimizing shopping experience and reducing return rates</li>
+</ul></p>
+      </div>
+    </a>
+  
+    <a href="../projects/project-4-bank/" style="text-decoration: none; color: inherit;">
+      <div class="card project-card" style="margin-bottom: 2rem;">
+        <h2 style="margin-top: 0; color: #9333ea;">Bank Product Customer Subscription Prediction with LightGBM</h2>
+        <p><p><em>Author &amp; Researcher | Advisor: Associate Prof. Ying Lin</em><br>
+<em><strong>Duration:</strong> Oct 2024 – Jan 2025</em></p>
+<ul>
+<li>Built a machine learning system for predicting customer subscription to bank products</li>
+<li>Conducted comprehensive data preprocessing and feature engineering</li>
+<li>Compared and optimized Decision Tree, Random Forest, XGBoost, and LightGBM models using Optuna</li>
+<li>Performed model evaluation, stacking ensemble, and feature importance analysis</li>
+<li>Delivered actionable recommendations for marketing strategies</li>
+</ul></p>
+      </div>
+    </a>
+  
+</div>
+
+  </main>
+
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    } else {
+      toggleButton.textContent = '🌙';
+    }
+  
+    
+    toggleButton?.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

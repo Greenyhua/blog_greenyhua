@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome!</title>
+  
+  <link rel="stylesheet" href="https://greenyhua.github.io/blog_greenyhua/css/style.min.76eaa045afa830c2b6efcac7306459a89fa0e6fab89c237659e1a380b76c7b5c.css">
+  
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav">
+    
+    <div class="nav-left">
+      <a href="../../" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    
+    <div class="nav-links">
+      
+      <a href="../../" class="nav-link ">🌼About</a>
+      <a href="../../publications/" class="nav-link ">📖Publications</a>
+      <a href="../../projects/" class="nav-link ">🎯Projects</a>
+      <a href="../../cv/" class="nav-link ">📃CV</a>
+      <a href="../../blog/" class="nav-link active">✍️Blog</a>
+    </div>
+  </nav>
+</header>
+  
+  <main>
+    
+  <div class="container">
+
+    
+    <a href="../../blog/" style="display: inline-block; margin-bottom: 1rem; color: #9333ea; text-decoration: none;">
+      ← Back to Blog
+    </a>
+
+    
+    <div class="card">
+      <h1 style="font-size: 2rem;">Welcome!</h1>
+      <p style="color: #666; margin-bottom: 2rem;">Apr 12, 2025</p>
+
+      <div class="post-content">
+        <p>Hi👋 After countless adjustments, my website is finally live🥳!<br>
+There&rsquo;s not much content yet, but please stay in touch!<br>
+Feel free to leave me a comment in the section below👇!</p>
+
+      </div>
+    </div>
+
+    
+    <div id="tw-comment" style="margin-top: 3rem;"></div>
+<script>
+    const getStoredTheme = () => localStorage.getItem("pref-theme") === "light" ? "light" : "dark";
+    const setGiscusTheme = () => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (iframe) {
+            iframe.contentWindow.postMessage({
+                giscus: {
+                    setConfig: {theme: getStoredTheme()}
+                }
+            }, 'https://giscus.app');
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const giscusAttributes = {
+            "src": "https://giscus.app/client.js",
+            "data-repo": "Greenyhua\/blog_greenyhua",
+            "data-repo-id": "R_kgDOOkwXvA",
+            "data-category": "Announcements",
+            "data-category-id": "DIC_kwDOOkwXvM4Cpydu",
+            "data-mapping": "pathname",
+            "data-strict": "0",
+            "data-reactions-enabled": "1",
+            "data-emit-metadata": "0",
+            "data-input-position": "bottom",
+            "data-theme": getStoredTheme(),
+            "data-lang": "en",
+            "data-loading": "lazy",
+            "crossorigin": "anonymous",
+        };
+
+        const giscusScript = document.createElement("script");
+        Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+        document.querySelector("#tw-comment").appendChild(giscusScript);
+
+        const themeSwitcher = document.querySelector("#theme-toggle");
+        if (themeSwitcher) themeSwitcher.addEventListener("click", setGiscusTheme);
+
+        const themeFloatSwitcher = document.querySelector("#theme-toggle-float");
+        if (themeFloatSwitcher) themeFloatSwitcher.addEventListener("click", setGiscusTheme);
+    });
+</script>
+  </div>
+
+  </main>
+
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    } else {
+      toggleButton.textContent = '🌙';
+    }
+  
+    
+    toggleButton?.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

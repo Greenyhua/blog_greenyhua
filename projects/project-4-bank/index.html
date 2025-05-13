@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Product Customer Subscription Prediction with LightGBM</title>
+  
+  <link rel="stylesheet" href="https://greenyhua.github.io/blog_greenyhua/css/style.min.76eaa045afa830c2b6efcac7306459a89fa0e6fab89c237659e1a380b76c7b5c.css">
+  
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav">
+    
+    <div class="nav-left">
+      <a href="../../" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    
+    <div class="nav-links">
+      
+      <a href="../../" class="nav-link ">🌼About</a>
+      <a href="../../publications/" class="nav-link ">📖Publications</a>
+      <a href="../../projects/" class="nav-link active">🎯Projects</a>
+      <a href="../../cv/" class="nav-link ">📃CV</a>
+      <a href="../../blog/" class="nav-link ">✍️Blog</a>
+    </div>
+  </nav>
+</header>
+  
+  <main>
+    
+  <div class="container">
+    <a href="../../projects/" style="display: inline-block; margin-bottom: 1rem; color: #9333ea; text-decoration: none;">
+      ← Back to Projects
+    </a>
+    <div class="card">
+      <h1 style="font-size: 2rem;">Bank Product Customer Subscription Prediction with LightGBM</h1>
+      
+      <div class="post-content">
+        <h2 id="introduction">Introduction</h2>
+<p>This project addresses the challenge of accurately predicting which bank customers are likely to subscribe to new products. Traditional marketing approaches often rely on experience and general rules, which can result in inefficient resource allocation. Leveraging a real-world dataset of 30,000 bank clients, we adopted a data-driven framework to improve precision marketing through machine learning.</p>
+<h2 id="methods">Methods</h2>
+<ul>
+<li>
+<p><strong>Data Preprocessing:</strong></p>
+<ul>
+<li>No missing values; all features checked for consistency</li>
+<li>Encoded categorical variables using OrdinalEncoder</li>
+<li>Standardized numerical features with StandardScaler</li>
+<li>Labeled the target variable (<code>subscribe</code>) as binary</li>
+</ul>
+</li>
+<li>
+<p><strong>Model Development and Optimization:</strong></p>
+<ul>
+<li>Explored four models: Decision Tree, Random Forest, XGBoost, and LightGBM</li>
+<li>Hyperparameters were tuned automatically via Optuna to maximize F1 score or minimize logloss</li>
+<li>Model performance was evaluated using 5-fold cross-validation, AUC, and F1 score</li>
+<li>Stacking ensemble was tested with Logistic Regression as the meta-learner, combining Random Forest and LightGBM</li>
+</ul>
+</li>
+<li>
+<p><strong>Feature Importance Analysis:</strong></p>
+<ul>
+<li>Used LightGBM&rsquo;s built-in tools to visualize and interpret key features influencing predictions</li>
+</ul>
+</li>
+</ul>
+<h2 id="results--conclusion">Results &amp; Conclusion</h2>
+<ul>
+<li>
+<p><strong>Performance:</strong></p>
+<ul>
+<li>Random Forest and LightGBM achieved the best AUC scores (0.8896 and 0.8871, respectively); stacking ensemble provided only a marginal improvement (AUC 0.8917)</li>
+<li>LightGBM was chosen for deployment due to its strong accuracy, high efficiency (much shorter training time than Random Forest), and model interpretability</li>
+</ul>
+</li>
+<li>
+<p><strong>Key Insights:</strong></p>
+<ul>
+<li>The most important driver of product subscription was the <strong>duration</strong> of the last client-bank interaction, followed by macroeconomic indicators and historical contact intervals.</li>
+<li>Results support more data-driven, cost-effective, and personalized marketing strategies</li>
+</ul>
+</li>
+</ul>
+<h2 id="my-contributions-to-the-project">My Contributions to the Project</h2>
+<ul>
+<li>Led data preprocessing, feature engineering, and model selection</li>
+<li>Performed model optimization and ensemble experiments</li>
+<li>Visualized feature importances and interpreted business implications</li>
+<li>Authored the final report and delivered actionable insights for bank marketing</li>
+</ul>
+<p><a href="https://github.com/Greenyhua/MLUS_2024/tree/main">Project code and results →</a></p>
+
+      </div>
+    </div>
+    
+    <div id="tw-comment" style="margin-top: 3rem;"></div>
+<script>
+    const getStoredTheme = () => localStorage.getItem("pref-theme") === "light" ? "light" : "dark";
+    const setGiscusTheme = () => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (iframe) {
+            iframe.contentWindow.postMessage({
+                giscus: {
+                    setConfig: {theme: getStoredTheme()}
+                }
+            }, 'https://giscus.app');
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const giscusAttributes = {
+            "src": "https://giscus.app/client.js",
+            "data-repo": "Greenyhua\/blog_greenyhua",
+            "data-repo-id": "R_kgDOOkwXvA",
+            "data-category": "Announcements",
+            "data-category-id": "DIC_kwDOOkwXvM4Cpydu",
+            "data-mapping": "pathname",
+            "data-strict": "0",
+            "data-reactions-enabled": "1",
+            "data-emit-metadata": "0",
+            "data-input-position": "bottom",
+            "data-theme": getStoredTheme(),
+            "data-lang": "en",
+            "data-loading": "lazy",
+            "crossorigin": "anonymous",
+        };
+
+        const giscusScript = document.createElement("script");
+        Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+        document.querySelector("#tw-comment").appendChild(giscusScript);
+
+        const themeSwitcher = document.querySelector("#theme-toggle");
+        if (themeSwitcher) themeSwitcher.addEventListener("click", setGiscusTheme);
+
+        const themeFloatSwitcher = document.querySelector("#theme-toggle-float");
+        if (themeFloatSwitcher) themeFloatSwitcher.addEventListener("click", setGiscusTheme);
+    });
+</script>
+  </div>
+
+  </main>
+
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    } else {
+      toggleButton.textContent = '🌙';
+    }
+  
+    
+    toggleButton?.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

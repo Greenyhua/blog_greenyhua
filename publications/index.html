@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shijia Qing - Publications</title>
+  
+  <link rel="stylesheet" href="https://greenyhua.github.io/blog_greenyhua/css/style.min.76eaa045afa830c2b6efcac7306459a89fa0e6fab89c237659e1a380b76c7b5c.css">
+  
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav">
+    
+    <div class="nav-left">
+      <a href="../" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    
+    <div class="nav-links">
+      
+      <a href="../" class="nav-link ">🌼About</a>
+      <a href="../publications/" class="nav-link active">📖Publications</a>
+      <a href="../projects/" class="nav-link ">🎯Projects</a>
+      <a href="../cv/" class="nav-link ">📃CV</a>
+      <a href="../blog/" class="nav-link ">✍️Blog</a>
+    </div>
+  </nav>
+</header>
+  
+  <main>
+    
+  <article class="post-single" style="padding: 2rem; max-width: 960px; margin: auto;">
+    
+    <header class="post-header">
+      <h1 class="post-title" style="font-size: 2.2rem; margin-bottom: 1rem;">
+        Shijia Qing - Publications
+      </h1>
+  
+  
+      
+      <div class="post-description" style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.6;">
+        Hi👋 I don&rsquo;t have many publications right now, but please stay in touch! Check the 🎯<a href="../projects/">Projects</a> section to see my experience!
+      </div>
+      
+    </header>
+  
+    
+    
+    <div class="post-content" style="font-size: 1rem; line-height: 1.8;">
+      <div class="card" style="margin-bottom: 2rem;">
+<h2>📄 Papers</h2>
+<ol>
+<li><strong>Qing, S.</strong>, Cai, H., &amp; Zhou, G. (n.d.).<br>
+Unraveling Group Attractiveness: Weighted Averaging and Recency Effects in RSVP Presentations.<br>
+<em>Journal of Experimental Psychology: Human Perception and Performance.</em> (under review)</li>
+</ol>
+</div>
+<div class="card" style="margin-bottom: 2rem;">
+<h2>📝 Manuscripts</h2>
+<ol>
+<li>The Effects of Cosmetic Surgery Labels on Perceptions of Facial Attractiveness and Naturalness: The Role of Mate Selection and Attitudes.</li>
+</ol>
+</div>
+<div class="card" style="margin-bottom: 2rem;">
+<h2>🎤 Conferences</h2>
+<ol>
+<li>
+<p><strong>Qing, S.</strong>, Cai, H., &amp; Zhou, G.<br>
+Recency Effect in the Ensemble Perception of Average Facial Attractiveness.<br>
+<em>2024 Annual Conference of the Division of General and Experimental Psychology, Chinese Psychological Society.</em><br>
+Lanzhou, China. March, 2024.</p>
+</li>
+<li>
+<p><strong>Qing, S.</strong>, Lin, Y., &amp; Zhou, G.<br>
+The Role of Social Familiarity and Self in the Uncanny Valley Effect: An Exploration of Multidimensional Mechanisms.<br>
+<em>2025 Annual Conference of the Chinese Association of Social Psychology.</em><br>
+Chengdu, China. June, 2025 (expected).</p>
+</li>
+</ol>
+</div>
+
+    </div>
+    
+  </article>
+
+  </main>
+
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    } else {
+      toggleButton.textContent = '🌙';
+    }
+  
+    
+    toggleButton?.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

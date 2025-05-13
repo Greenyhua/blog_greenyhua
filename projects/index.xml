@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shijia Qing - Projects on Greenyhua&#39;s Blog</title>
+    <link>https://greenyhua.github.io/blog_greenyhua/projects/</link>
+    <description>Recent content in Shijia Qing - Projects on Greenyhua&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>[©2025 greenyhua&#39;s Blog](https://greenyhua.github.io/blog_greenyhua/)</copyright>
+    <atom:link href="https://greenyhua.github.io/blog_greenyhua/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research on Social Familiarity and Self in the Uncanny Valley: A Multidimensional Exploration (Master Thesis)</title>
+      <link>https://greenyhua.github.io/blog_greenyhua/projects/project-1-thesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://greenyhua.github.io/blog_greenyhua/projects/project-1-thesis/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Author &amp;amp; Lead Researcher | Advisor: Prof. Guomei Zhou&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;&lt;strong&gt;Duration:&lt;/strong&gt; Dec 2024 – Present&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This project investigates the uncanny valley effect from the perspectives of social cognition and self-concept, focusing on emotional, cognitive, and social mechanisms. It also includes the development and validation of a new scale to measure human threat perception and defensive mechanisms toward robots.&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Recency Effect in the Ensemble Perception of Average Facial Attractiveness</title>
+      <link>https://greenyhua.github.io/blog_greenyhua/projects/project-2-recency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://greenyhua.github.io/blog_greenyhua/projects/project-2-recency/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Author &amp;amp; Lead Researcher | Advisor: Prof. Guomei Zhou&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;&lt;strong&gt;Duration:&lt;/strong&gt; Nov 2023 – Aug 2024&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Explored how recent stimuli influence ensemble perception of group facial attractiveness&lt;/li&gt;&#xA;&lt;li&gt;Designed and conducted four experiments using RSVP paradigms with morphed and real faces&lt;/li&gt;&#xA;&lt;li&gt;Demonstrated that later-presented faces exert disproportionate weight on group attractiveness judgments&lt;/li&gt;&#xA;&lt;li&gt;Established a weighted-processing model and linked the recency effect to memory constraints&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>User Mental Model Construction for 3D Virtual Fitting Room</title>
+      <link>https://greenyhua.github.io/blog_greenyhua/projects/project-3-hf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://greenyhua.github.io/blog_greenyhua/projects/project-3-hf/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Author &amp;amp; Researcher | Advisor: Associate Prof. Qi Wang&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;&lt;strong&gt;Duration:&lt;/strong&gt; Apr 2024 – Jun 2024&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed a preliminary user mental model for 3D virtual fitting room applications&lt;/li&gt;&#xA;&lt;li&gt;Analyzed user needs, personas, and behavioral patterns in online apparel shopping&lt;/li&gt;&#xA;&lt;li&gt;Designed user-centered functionalities and usability testing scenarios&lt;/li&gt;&#xA;&lt;li&gt;Proposed solutions for optimizing shopping experience and reducing return rates&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Bank Product Customer Subscription Prediction with LightGBM</title>
+      <link>https://greenyhua.github.io/blog_greenyhua/projects/project-4-bank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://greenyhua.github.io/blog_greenyhua/projects/project-4-bank/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Author &amp;amp; Researcher | Advisor: Associate Prof. Ying Lin&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;&lt;strong&gt;Duration:&lt;/strong&gt; Oct 2024 – Jan 2025&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Built a machine learning system for predicting customer subscription to bank products&lt;/li&gt;&#xA;&lt;li&gt;Conducted comprehensive data preprocessing and feature engineering&lt;/li&gt;&#xA;&lt;li&gt;Compared and optimized Decision Tree, Random Forest, XGBoost, and LightGBM models using Optuna&lt;/li&gt;&#xA;&lt;li&gt;Performed model evaluation, stacking ensemble, and feature importance analysis&lt;/li&gt;&#xA;&lt;li&gt;Delivered actionable recommendations for marketing strategies&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shijia Qing - Blog on Greenyhua&#39;s Blog</title>
+    <link>https://greenyhua.github.io/blog_greenyhua/blog/</link>
+    <description>Recent content in Shijia Qing - Blog on Greenyhua&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>[©2025 greenyhua&#39;s Blog](https://greenyhua.github.io/blog_greenyhua/)</copyright>
+    <lastBuildDate>Sat, 12 Apr 2025 23:02:32 +0800</lastBuildDate>
+    <atom:link href="https://greenyhua.github.io/blog_greenyhua/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome!</title>
+      <link>https://greenyhua.github.io/blog_greenyhua/blog/post-1/</link>
+      <pubDate>Sat, 12 Apr 2025 23:02:32 +0800</pubDate>
+      <guid>https://greenyhua.github.io/blog_greenyhua/blog/post-1/</guid>
+      <description>&lt;p&gt;Hi👋 After countless adjustments, my website is finally live🥳!&lt;br&gt;&#xA;There&amp;rsquo;s not much content yet, but please stay in touch!&lt;br&gt;&#xA;Feel free to leave me a comment in the section below👇!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

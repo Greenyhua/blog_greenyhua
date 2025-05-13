@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shijia Qing - Blog</title>
+  
+  <link rel="stylesheet" href="https://greenyhua.github.io/blog_greenyhua/css/style.min.76eaa045afa830c2b6efcac7306459a89fa0e6fab89c237659e1a380b76c7b5c.css">
+  
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav">
+    
+    <div class="nav-left">
+      <a href="../" class="site-title">Greenyhua🌼</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    
+    <div class="nav-links">
+      
+      <a href="../" class="nav-link ">🌼About</a>
+      <a href="../publications/" class="nav-link ">📖Publications</a>
+      <a href="../projects/" class="nav-link ">🎯Projects</a>
+      <a href="../cv/" class="nav-link ">📃CV</a>
+      <a href="../blog/" class="nav-link active">✍️Blog</a>
+    </div>
+  </nav>
+</header>
+  
+  <main>
+    
+<div class="container blog-page">
+  <h1 style="font-size: 2rem; margin-bottom: 1.5rem;">Blog</h1>
+
+  
+    <a href="../blog/post-1/" style="text-decoration: none; color: inherit;">
+    <div class="card project-card" style="margin-bottom: 2rem;">
+      <h2 style="margin-top: 0; color: #9333ea;">Welcome!</h2>
+        <p><p>Hi👋 After countless adjustments, my website is finally live🥳!<br>
+There&rsquo;s not much content yet, but please stay in touch!<br>
+Feel free to leave me a comment in the section below👇!</p></p>
+    </div>
+    </a>
+  
+</div>
+
+  </main>
+
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    } else {
+      toggleButton.textContent = '🌙';
+    }
+  
+    
+    toggleButton?.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
